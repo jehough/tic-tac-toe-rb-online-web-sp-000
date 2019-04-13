@@ -130,5 +130,5 @@ def play (board)
     turn (board)
   end
   win_player = winner(board)
-  puts "Congrats #{win_player} has won!"
+  puts "Congratulations #{win_player}!"
 end

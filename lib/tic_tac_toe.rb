@@ -128,5 +128,7 @@ end
 def play (board)
   until over?(board)==true
   turn (board)
+  over?(board)
+end
 
 end

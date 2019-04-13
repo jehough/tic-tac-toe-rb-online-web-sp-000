@@ -129,6 +129,10 @@ def play (board)
   until over?(board)==true
     turn (board)
   end
-  win_player = winner(board)
-  puts "Congratulations #{win_player}!"
+  if won?(board)
+    win_player = winner(board)
+    puts "Congratulations #{win_player}!"
+  elsif draw?(board)
+    puts "Cat's Game!"
+  end
 end

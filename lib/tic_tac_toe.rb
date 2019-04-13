@@ -126,9 +126,7 @@ def winner (board)
 end
 
 def play (board)
+  until over?(board)==true
   turn (board)
-  if over?(board)
-    winner?(board)
-  end
-  turn (board)
+
 end
